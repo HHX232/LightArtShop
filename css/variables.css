@@ -1,0 +1,35 @@
+:root {
+    /* Colors */
+
+    --background: #082030;
+    --background-light: #013D57;
+    --background-lighter: #1C5D79;
+
+    --white: #ffffff;
+    --purple-light: #737AA7;
+    --purple: #4C5075;
+    --purple-dark: #343959;
+    --yellow: #F8DB8F;
+    --orange: #F48C00;
+    --blue-dark: #012C4A;
+    --blue-darker: #082030;
+
+    /* Accent Colors */
+
+    --accent-pink: #DE376F;
+    --accent-purple: #594EC8;
+    --accent-blue: #1E91C5;
+    --accent-green: #74B664;
+    --accent-red: #CF3F3F;
+
+    /* Text */
+
+    --fs-xxs: 13px;
+    --fs-xs: 14px;
+    --fs-s: 20px;
+    --fs-m: 20px;
+    --fs-l: 30px;
+    --fs-xl: 37px;
+    --fs-xxl: 45px;
+    --fs-xxxl: 55px;
+}

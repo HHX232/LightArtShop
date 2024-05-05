@@ -1,0 +1,14 @@
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.gone__list-item {
+  font-size: 28px;
+  margin-top: 25px;
+}
+.gone__list-item + .gone__list-item {
+  margin-top: 25px;
+}/*# sourceMappingURL=footer.css.map */

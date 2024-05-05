@@ -1,0 +1,42 @@
+section.container-section__player h1 {
+    font-size: var(--fs-xxxl);
+}
+
+section.container-section__player h2 {
+    font-size: var(--fs-xxl);
+}
+
+section.container-section__player h3 {
+    font-size: var(--fs-xl);
+}
+
+section.container-section__player h4 {
+    font-size: var(--fs-l);
+}
+
+section.container-section__player p {
+    font-size: var(--fs-m);
+}
+
+section.container-section__player small {
+    font-size: var(--fs-s);
+}
+
+section.container-section__player .smaller {
+    display: inline;
+    font-size: var(--fs-xs);
+}
+
+section.container-section__player .smallest {
+    display: inline;
+    font-size: var(--fs-xxs);
+}
+
+section.container-section__player .block {
+    background-color: var(--background-light);
+}
+
+section.container-section__player .text-yellow {
+    display: inline;
+    color: var(--yellow);
+}

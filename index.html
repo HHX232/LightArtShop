@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightArtShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/audioplayer_reset.css">
+    <link rel="stylesheet" href="css/audioplayer.css">
+</head>
+
+<body>
+    <nav id="nav" class="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <div class="nav__left">
+                    <img src="./img/logo.svg" alt="" class="logo">
+                    <ul class="services">
+                        <li class="services__item services__item-main"><a href="#pleer">Аудиоплеер</a> </li>
+                        <li class="services__item"><a href="#happiness">Цена</a> </li>
+                        <li class="services__item"><a href="#glass">Изображение</a> </li>
+                    </ul>
+                </div>
+                <div class="nav__right">
+                    <ul class="commune">
+                        <div class="commune__links-window ">
+                            <img src="/img/crosssss.svg" alt="" class="commune__links-cross">
+                            <a href="https://t.me/HHX232" class="commune__links-link links__link-tg">Telegram</a>
+                            <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA=="
+                                class="commune__links-link links__link-inst">Instagram</a>
+                            <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA=="
+                                class="commune__links-link links__link-email">Gmail</a>
+                        </div>
+
+                        <li class="commune__item"> <img src="./img/message.svg" alt="" class="commune__img"> </li>
+                        <li class="commune__item commune__item--phone">Связаться</li>
+                        <li class="commune__item commune__item-bold">Регистрация </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__main-content">
+                    <h2 class="header__title"><span> Light Art </span> – ночник, сделанный для тебя</h2>
+                    <p class="header__text">Полная индивидуализация, адаптивность в интерьерах низкая цена, гарантия
+                        качества</p>
+                    <div class="header__links">
+                        <a href="#happiness" class="header__link">Подобрать</a>
+                        <a href="https://t.me/HHX232" class="header__btn">Связаться</a>
+                    </div>
+                </div>
+
+                <picture class="header__img">
+                    <source media="(max-width: 366px)" srcset="img/girl-colorw365.jpg">
+                    <source media="(max-width: 450px)" srcset="img/girlcolorw467.jpg">
+                    <source media="(max-width: 1200px)" srcset="img/girlcolormax.webp" type="image/webp">
+                    <source media="(min-width: 1201px)" srcset="img/girlcolormax.webp" type="image/webp">
+                    <img src="/img/girlcolormax.png" alt="" class="header__img">
+                </picture>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="whats" class="whats">
+        <div class="container">
+            <div class="whats__inner">
+                <div class="glass__img-container">
+                    <img src="./img/glass-img.webp" alt="" class="glass__img">
+                    <img src="./img/glass-lights.svg" alt="" class="glass__decor-img">
+                </div>
+                <div class="whats__content">
+                    <h3 class="whats__title">
+                        Что это, <span>Light Art?</span>
+                    </h3>
+                    <div class="whats__text">Вкратце – светящаяся аниме картина с возможностью быстрой смены
+                        изображения, регулировкой типа освещения и с воспроизведения аудио</div>
+                    <a href="#happiness" class="whats__link ">Просмотреть <br>
+                        предложения</a>
+                    <div class="whats__points">
+                        <ul class="whats__list">
+                            <li class="whats__list-item ">
+                                <p class="whats__list-text pink">Гарантия <br>
+                                    качества</p>
+                            </li>
+                            <li class="whats__list-item">
+                                <p class="whats__list-text purple">Полная <br>
+                                    безопасность</p>
+                            </li>
+                            <li class="whats__list-item ">
+                                <p class="whats__list-text pink">Улучшение <br>
+                                    сна</p>
+                            </li>
+                        </ul>
+                        <ul class="whats__list">
+                            <li class="whats__list-item ">
+                                <p class="whats__list-text purple">Спектр <br>
+                                    функций</p>
+                            </li>
+                            <li class="whats__list-item">
+                                <p class="whats__list-text pink ">Украшение <br>
+                                    интерьера</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="whats__decor">
+                    <img src="./img/arrow.svg" alt="" class="whats__decor-img">
+                    <p class="whats__decor-text">scroll</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="happiness" class="happiness">
+        <div class="container">
+            <h3 class="happiness__title">Вариации вашего <br>
+                <span>счастья</span>
+            </h3>
+
+            <div class="happiness__content">
+
+                <ul class="happiness__list">
+                    <li class="happiness__list-item">
+                        <h4 class="happiness__item-title happiness__item-title--1">Standart <br> version</h4>
+                        <ul class="happiness__item-parts  happiness__item-parts--1">
+
+                            <li class="happiness__part-item">
+                                <p class="happines__item-text happines__arrow-text">Изображение из каталога</p>
+                                <img data-tab="tab-1" src="./img/pink-arrow.svg" alt=""
+                                    class="happines__item-arrow happines__arrow-images ">
+
+                                <div data-tab-content id="tab-1" class="gallery__images-inner--1 none">
+                                    <h4 class="gallery__images-title">Персональное изображение <br> <span>
+                                            создается по вашим индивидуальным запросам </span></h4>
+                                    <div class="gallery__images-personal">
+                                        <img src="./img/personal-1.png" alt="" class="gallery__personal-img">
+                                        <img src="./img/personal-2.png" alt="" class="gallery__personal-img">
+                                    </div>
+                                    <h4 class="gallery__images-title">Изображения из каталога</h4>
+                                    <div class="gallery__images-personal">
+                                        <img src="./img/girl-personal-1.jpg" alt="" class="gallery__personal-img">
+                                        <img src="./img/girl-personal-2.jpg" alt="" class="gallery__personal-img">
+                                    </div>
+                                    <p class="window__subtext">Просмотреть еще</p>
+                                </div>
+
+                            </li>
+
+                            <li class="happiness__part-item">
+                                <div class="happines__item-text">Стандартная рамка</div>
+                            </li>
+                            <li class="happiness__part-item">
+                                <div class="happines__item-text">Один тип подсветки
+                                    <br> ( подходящий изображению )
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA=="
+                            class="happiness__item-link inst-link">instagram <span>– 55 BYN </span></a>
+                    </li>
+
+                    <li class="happiness__list-item">
+                        <h4 class="happiness__item-title happiness__item-title--2">Advanced <br> version</h4>
+                        <ul class="happiness__item-parts happiness__item-parts--2">
+                            <li class="happiness__part-item">
+                                <p class="happines__item-text">Изображение созданное для вас</p>
+                                <img data-tab="tab-2" src="./img/pink-arrow.svg" alt="" class="happines__item-arrow">
+
+                                <div data-tab-content id="tab-2" class="gallery__images-inner--1 none">
+                                    <h4 class="gallery__images-title">Персональное изображение <br> <span>
+                                            создается по вашим индивидуальным запросам </span></h4>
+                                    <div class="gallery__images-personal">
+                                        <img src="./img/personal-1.png" alt="" class="gallery__personal-img">
+                                        <img src="./img/personal-2.png" alt="" class="gallery__personal-img">
+                                    </div>
+                                    <h4 class="gallery__images-title">Изображения из каталога</h4>
+                                    <div class="gallery__images-personal">
+                                        <img src="./img/girl-personal-1.jpg" alt="" class="gallery__personal-img">
+                                        <img src="./img/girl-personal-2.jpg" alt="" class="gallery__personal-img">
+                                    </div>
+                                    <p class="window__subtext">Просмотреть еще</p>
+                                </div>
+
+                            </li>
+                            <li class="happiness__part-item">
+                                <p class="happines__item-text">Стандартная рамка</p>
+
+                            </li>
+                            <li class="happiness__part-item">
+                                <p class="happines__item-text">3 типа подсветки</p>
+                                <div class="glow__container">
+                                    <div class="glow__item glow__item-white"></div>
+                                    <div class="glow__item glow__item-middle"></div>
+                                    <div class="glow__item glow__item-orange"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="https://t.me/HHX232" class="happiness__item-link tg-link big-link">telegram <span> –
+                                65 BYN</span></a>
+                        <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA=="
+                            class="happiness__item-link inst-link">instagram <span>– 65 BYN </span></a>
+                    </li>
+
+                    <li class="happiness__list-item">
+                        <h4 class="happiness__item-title happiness__item-title--3">Personalized <br> version</h4>
+                        <ul class="happiness__item-parts happiness__item-parts--3">
+                            <li class="happiness__part-item">
+                                <p class="happines__item-text">Изображение созданное для вас</p>
+                                <img data-tab="tab-3" src="./img/pink-arrow.svg" alt="" class="happines__item-arrow">
+
+                                <div data-tab-content id="tab-3" class="gallery__images-inner--1 none">
+                                    <h4 class="gallery__images-title">Персональное изображение <br> <span>
+                                            создается по вашим индивидуальным запросам </span></h4>
+                                    <div class="gallery__images-personal">
+                                        <img src="./img/personal-1.png" alt="" class="gallery__personal-img">
+                                        <img src="./img/personal-2.png" alt="" class="gallery__personal-img">
+                                    </div>
+                                    <h4 class="gallery__images-title">Изображения из каталога</h4>
+                                    <div class="gallery__images-personal">
+                                        <img src="./img/girl-personal-1.jpg" alt="" class="gallery__personal-img">
+                                        <img src="./img/girl-personal-2.jpg" alt="" class="gallery__personal-img">
+                                    </div>
+                                    <p class="window__subtext">Просмотреть еще</p>
+                                </div>
+
+                            </li>
+                            <li class="happiness__part-item">
+                                <p class="happines__item-text">Персональная рамка</p>
+                                <img data-tab="tab-4" src="./img/pink-arrow.svg" alt="" class="happines__item-arrow">
+
+                                <div data-tab-content id="tab-4" class="gallery__images-inner--1 none ">
+                                    <h4 class="gallery__images-title">Персональное рамка<br>
+                                        <span>создается по вашим индивидуальным запросам
+                                        </span>
+                                    </h4>
+                                    <div class="gallery__images-personal">
+                                        <img src="./img/p-ramka1.svg" alt="" class="gallery__personal-img">
+                                        <img src="./img/p-ramka2.svg" alt="" class="gallery__personal-img">
+                                    </div>
+
+                                </div>
+
+                            </li>
+                            <li class="happiness__part-item">
+                                <p class="happines__item-text">3 типа подсветки</p>
+                                <div class="glow__container">
+                                    <div class="glow__item glow__item-white"></div>
+                                    <div class="glow__item glow__item-middle"></div>
+                                    <div class="glow__item glow__item-orange"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="https://t.me/HHX232" class="happiness__item-link tg-link big-link">telegram <span> –
+                                100+ BYN</span></a>
+                        <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA=="
+                            class="happiness__item-link inst-link">instagram <span>– 100+ BYN </span></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="glass" class="glass">
+        <div class="container">
+            <div class="glass__inner">
+                <h3 class="glass__title"> <span> Надоело изображение? </span> <br>
+                    Приобретите новое!</h3>
+                <ul class="glass__goods">
+                    <li class="glass__goods-item">
+                        <p class="happines__item-text">Приобретите дополнительное <br> изображение из каталога</p>
+
+                        <a href="https://t.me/HHX232" class="glass__link glass__link-wb">wildberries<span> – 25
+                                BYN</span></a>
+                        <a href="https://t.me/HHX232" class="glass__link glass__link-ozon">OZON <span>– 25
+                                BYN</span></a>
+                    </li>
+                    <li class="glass__goods-item">
+                        <p class="happines__item-text">Приобретите дополнительное <br> изображение из каталога</p>
+
+
+                        <a href="https://t.me/HHX232" class="glass__link glass__link-tg">telegram <span> – 40
+                                BYN</span></a>
+                        <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA=="
+                            class="glass__link glass__link-inst">instagram <span>– 40 BYN </span></a>
+
+                    </li>
+                </ul>
+
+                <div class="glass__decor">
+                    <img src="./img/ramka-pustishka.png" alt="" class="ramka">
+                    <div class="ramka__inner"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="pleer" class="container-section__player">
+        <div class="container">
+            <div class="container-section__player-title">
+                <h1 class="text-yellow">Авторская аудио база</h1>
+                <h3>Под любые цели</h3>
+            </div>
+            <div class="container-section__player-body">
+                <div class="container-section__player-body-player block">
+                    <div class="container-section__player-body-player-category">
+                        <small id="song-category" class="text-yellow">Для атмосферы</small>
+                    </div>
+                    <div class="container-section__player-body-player-image">
+                        <img id="song-image" src="./img/song-image.jpg" alt="Player Image">
+                        <div id="songProgressBar" class="container-section__player-body-player-image-progressbar"></div>
+                        <div class="container-section__player-body-player-image-progressbar__dot__container">
+                            <div id="songProgressBarDot"
+                                class="container-section__player-body-player-image-progressbar__dot"></div>
+                        </div>
+                    </div>
+                    <div class="container-section__player-body-player-song__name">
+                        <h3 id="song-name" class="text-yellow">Long Road</h3>
+                        <br>
+                        <small id="song-author">Kind Puppy</small>
+                    </div>
+                    <div class="container-section__player-body-player-controls">
+                        <button id="prev-button" class="container-section__player-body-player-controls-prev">
+                            <img src="./img/next.svg" alt="Control Prev">
+                        </button>
+                        <button id="play-button" class="container-section__player-body-player-controls-play">
+                            <img src="./img/play.svg" alt="Control Play">
+                            <img src="./img/pause.svg" alt="Control Play">
+                        </button>
+                        <button id="next-button" class="container-section__player-body-player-controls-next">
+                            <img src="./img/next.svg" alt="Control Next">
+                        </button>
+                    </div>
+                    <div class="container-section__player-body-player-next__info">
+                        <small>Следующее в очереди: <span id="next-in-order-empty">Пусто</ы></small>
+                        <div class="container-section__player-body-player-next__info-card__container">
+                            <div id="next-in-order"
+                                class="container-section__player-body-player-next__info-card__container-card">
+                                <div
+                                    class="container-section__player-body-player-next__info-card__container-card-image">
+                                    <img id="next-song-image" src="./img/next-song-image.jpg"
+                                        alt="Next Song Card Image">
+                                </div>
+                                <div class="container-section__player-body-player-next__info-card__container-card-info">
+                                    <div
+                                        class="container-section__player-body-player-next__info-card__container-card-info-title">
+                                        <small id="next-song-name" class="text-yellow">Обещание мира</small>
+                                        <div id="next-song-author" class="smaller">Ходячий замок</div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="container-section__player-body-player-next__info-card__container-card-controls">
+                                    <button id="next-button-play"
+                                        class="container-section__player-body-player-next__info-card__container-card-controls-play">
+                                        <img src="./img/play-next.svg" alt="Play Next Icon">
+                                    </button>
+                                    <button id="next-button-skip"
+                                        class="container-section__player-body-player-next__info-card__container-card-controls-undo">
+                                        <img src="./img/cross.svg" alt="Undo Next Icon">
+                                    </button>
+                                    <div
+                                        class="container-section__player-body-player-next__info-card__container-card-controls-time">
+                                        <div id="next-song-duration" class="smallest">5.18 мин</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-section__player-body-player-next__info-card__container-feedback">
+                                <div
+                                    class="container-section__player-body-player-next__info-card__container-feedback-positive">
+                                    <img src="./img/like.svg" alt="Positive feedback">
+                                </div>
+                                <div
+                                    class="container-section__player-body-player-next__info-card__container-feedback-negative">
+                                    <img src="./img/like.svg" alt="Negative feedback">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-section__player-body-info">
+                    <div class="container-section__player-body-info-title">
+                        <h2>
+                            Авторская подборка аудио<br>создана для таких целей как:
+                        </h2>
+                    </div>
+                    <div class="container-section__player-body-info-content">
+                        <div class="container-section__player-body-info-content-card block">
+                            <div class="container-section__player-body-info-content-card-image">
+                                <img src="./img/info-card-image-1.jpg" alt="Info Card Image">
+                            </div>
+                            <div class="container-section__player-body-info-content-card-title">
+                                <h4>Улучшение сна</h4>
+                                <p>
+                                    Достигается засчет разнообразных белых шумов и спокойных мелодий
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-section__player-body-info-content-card block">
+                            <div class="container-section__player-body-info-content-card-image">
+                                <img src="./img/info-card-image-2.jpg" alt="Info Card Image">
+                            </div>
+                            <div class="container-section__player-body-info-content-card-title">
+                                <h4>Развитие детей</h4>
+                                <p>
+                                    Развитие множество навыков и сфер, например, финансовая грамотность
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-section__player-body-info-content-card block">
+                            <div class="container-section__player-body-info-content-card-image">
+                                <img src="./img/info-card-image-3.jpg" alt="Info Card Image">
+                            </div>
+                            <div class="container-section__player-body-info-content-card-title">
+                                <h4>Изучение языков</h4>
+                                <p>
+                                    Станет интереснее благодаря переведенным сказкам и песням
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-section__player-body-info-content-card block">
+                            <div class="container-section__player-body-info-content-card-image">
+                                <img src="./img/info-card-image-4.jpg" alt="Info Card Image">
+                            </div>
+                            <div class="container-section__player-body-info-content-card-title">
+                                <h4>Создание уюта</h4>
+                                <p>
+                                    Проще с приятными мелодиями и произведениями
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pleer__big">
+        <div class="container">
+            <div class="pleer__big-inner">
+               
+            <div class="pleer__big-top">
+                <div class="slider">
+                    <div class="swiper">
+                       <div class="swiper-wrapper">
+                         <div class="swiper-slide" style="background-image: url(img/slide-1.jpg);"></div>
+                         <div class="swiper-slide" style="background-image: url(img/slide-2.jpg);"></div>
+                         <div class="swiper-slide" style="background-image: url(img/slide-3.jpg);"></div>
+                         <div class="swiper-slide" style="background-image: url(img/slide-1.jpg);"></div>
+                       </div>
+                       <div class="swiper-pagination"></div>
+                    </div>
+                 </div>
+                 
+
+                 <div class="pleer__chart">
+                    <h4 class="pleer__chart-title">Топ прослушиваний</h4>
+                    <ol class="chart__list">
+                        <li class="chart__list-item">
+                            <img src="img/chart-1.jpg" alt="" class="chart__item-imh">
+                            <div class="chart__item-info">
+                                <h4 class="chart__infoItem-title">Город с видом на море</h4>
+                                <p class="chart__infoItem-subtitle">Эйко Кадзима / Служба доставки Кики</p>
+                                <p class="chart__infoItem-date">1989</p>
+                            </div>
+                            <button class="chart__item-btn">
+                                <div id="chart-1" class="chart__item-btn--status " data-chart="chart-1"></div>
+                            </button>
+                        </li>
+                        <li class="chart__list-item">
+                            <img src="img/chart-2.jpg" alt="" class="chart__item-imh">
+                            <div class="chart__item-info">
+                                <h4 class="chart__infoItem-title">Shape of you</h4>
+                                <p class="chart__infoItem-subtitle">Add Sheeran / Fission</p>
+                                <p class="chart__infoItem-date">2017</p>
+                            </div>
+                            <button class="chart__item-btn">
+                                <div id="chart-2" class="chart__item-btn--status " data-chart="chart-2"></div>
+                            </button>
+                        </li>
+                        <li class="chart__list-item">
+                            <img src="img/chart-3.jpg" alt="" class="chart__item-imh">
+                            <div class="chart__item-info">
+                                <h4 class="chart__infoItem-title">Shape of you</h4>
+                                <p class="chart__infoItem-subtitle">New West / Musica Romantica</p>
+                                <p class="chart__infoItem-date">2023</p>
+                            </div>
+                            <button class="chart__item-btn">
+                                <div id="chart-3" class="chart__item-btn--status" data-chart="chart-3"></div>
+                            </button>
+                        </li>
+                        <li class="chart__list-item">
+                            <img src="img/chart-1.jpg" alt="" class="chart__item-imh">
+                            <div class="chart__item-info">
+                                <h4 class="chart__infoItem-title">Город с видом на море</h4>
+                                <p class="chart__infoItem-subtitle">Эйко Кадзима / Служба доставки Кики</p>
+                                <p class="chart__infoItem-date">1989</p>
+                            </div>
+                            <button class="chart__item-btn">
+                                <div id="chart-4" class="chart__item-btn--status" data-chart="chart-4"></div>
+                            </button>
+                        </li>
+                        <li class="chart__list-item">
+                            <img src="img/chart-2.jpg" alt="" class="chart__item-imh">
+                            <div class="chart__item-info">
+                                <h4 class="chart__infoItem-title">Shape of you</h4>
+                                <p class="chart__infoItem-subtitle">Add Sheeran / Fission</p>
+                                <p class="chart__infoItem-date">2017</p>
+                            </div>
+                            <button  class="chart__item-btn" >
+                                <div id="chart-5" class="chart__item-btn--status chart__item-btn--statusActive" data-chart="chart-5"></div>
+                            </button>
+                        </li>
+                        <li class="chart__list-item">
+                            <img src="img/chart-3.jpg" alt="" class="chart__item-imh">
+                            <div class="chart__item-info">
+                                <h4 class="chart__infoItem-title">Shape of you</h4>
+                                <p class="chart__infoItem-subtitle">New West / Musica Romantica</p>
+                                <p class="chart__infoItem-date">2023</p>
+                            </div>
+                            <button class="chart__item-btn">
+                                <div id="chart-6" class="chart__item-btn--status" data-chart="chart-6"></div>
+                            </button>
+                        </li>
+                      
+                    </ol>
+                 </div>
+            </div> 
+
+
+                <div class="pleer__big-bottom">
+                    <h2 class="pleer__bottom-title">Аудио подборка</h2>
+
+                    <div class="tabs">
+                        <div class="tabs__btns">
+                            <button class="tabs__btn-item tabs__btn-item--active" data-button="content-1">Песни</button>
+                            <button class="tabs__btn-item" data-button="content-2">аудиокниги</button>
+                            <button class="tabs__btn-item" data-button="content-3">подкасты</button>
+                            <button class="tabs__btn-item" data-button="content-4">мелодии</button>
+                            <button class="tabs__btn-filter">
+                                <img src="img/filter.svg" alt="" class="filter__img">
+                                <p class="filter__text">фильтры</p>
+                            </button>
+                        </div>
+
+                        <ul class="tabs__content">
+                            <li class="tabs__content-item tabs__content-item--active" id="content-1">
+
+                            </li>
+                            <li class="tabs__content-item" id="content-2">
+
+                            </li>
+                            <li class="tabs__content-item" id="content-3">
+
+                            </li>
+                            <li class="tabs__content-item" id="content-4">
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="gone__list">
+                    <li class="gone__list-item">
+                        <div class="burger">
+                            <div class="burger__point"></div>
+                            <div class="burger__point"></div>
+                            <div class="burger__point"></div>
+                        </div>
+                    </li>
+                    <li class="gone__list-item">
+                        <a href="#pleer" class="gone__list-link">Аудиоплеер</a>
+                    </li>
+                    <li class="gone__list-item">
+                        <a href="#glass" class="gone__list-link">отдельно стекло</a>
+                    </li>
+                    <li class="gone__list-item">
+                        <a href="#happiness" class="gone__list-link">Полная комплектация</a>
+                    </li>
+                </ul>
+
+                <a href="#nav"><img src="./img/logo.svg" alt="" class="footer__logo logo"></a>
+                <ul class="button__list">
+                    <a href="https://t.me/HHX232" class="glass__link glass__link-tg button__list-link">telegram</a>
+                    <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA=="
+                        class="glass__link glass__link-inst button__list-link">instagram </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <audio id="song"></audio>
+    <audio id="next-song"></audio>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/song.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/audioplayer.js" defer></script>
+    <script src="js/progressbar.js" defer></script>
+    <script src="js/main_audioplayer.js" defer></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
