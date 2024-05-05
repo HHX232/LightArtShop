@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LightArtShop</title>
@@ -13,14 +13,15 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/audioplayer_reset.css">
     <link rel="stylesheet" href="css/audioplayer.css">
+    <link rel="Icon" href="/img/favicon.ico">
 </head>
 
-<body>
+<body class="body ">
     <nav id="nav" class="nav">
         <div class="container">
             <div class="nav__inner">
                 <div class="nav__left">
-                    <img src="./img/logo.svg" alt="" class="logo">
+                <a href="https://tibo.by/ip/" class="tibo__link">    <img style="border-radius:20px ;"  src="./img/tibo-baner.jpeg" alt="" class="logo"></a>
                     <ul class="services">
                         <li class="services__item services__item-main"><a href="#pleer">Аудиоплеер</a> </li>
                         <li class="services__item"><a href="#happiness">Цена</a> </li>
@@ -34,13 +35,13 @@
                             <a href="https://t.me/HHX232" class="commune__links-link links__link-tg">Telegram</a>
                             <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA=="
                                 class="commune__links-link links__link-inst">Instagram</a>
-                            <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA=="
+                            <a  href="mailto: vladstepanov1108@gmail.com"
                                 class="commune__links-link links__link-email">Gmail</a>
                         </div>
 
                         <li class="commune__item"> <img src="./img/message.svg" alt="" class="commune__img"> </li>
                         <li class="commune__item commune__item--phone">Связаться</li>
-                        <li class="commune__item commune__item-bold">Регистрация </li>
+                        <li class="commune__item commune__item-bold commune__item-color">Светлая тема </li>
                     </ul>
                 </div>
 
@@ -57,13 +58,13 @@
                         качества</p>
                     <div class="header__links">
                         <a href="#happiness" class="header__link">Подобрать</a>
-                        <a href="https://t.me/HHX232" class="header__btn">Связаться</a>
+                        <a href="https://www.instagram.com/lightartshop_?igsh=OGQ5ZDc2ODk2ZA==" class="header__btn">Связаться</a>
                     </div>
                 </div>
 
                 <picture class="header__img">
                     <source media="(max-width: 366px)" srcset="img/girl-colorw365.jpg">
-                    <source media="(max-width: 450px)" srcset="img/girlcolorw467.jpg">
+                    <source media="(max-width: 450px)" srcset="img/girlcolorw467.webp" type="image/webp">
                     <source media="(max-width: 1200px)" srcset="img/girlcolormax.webp" type="image/webp">
                     <source media="(min-width: 1201px)" srcset="img/girlcolormax.webp" type="image/webp">
                     <img src="/img/girlcolormax.png" alt="" class="header__img">
@@ -523,7 +524,8 @@
                                 <p class="chart__infoItem-date">2017</p>
                             </div>
                             <button  class="chart__item-btn" >
-                                <div id="chart-5" class="chart__item-btn--status chart__item-btn--statusActive" data-chart="chart-5"></div>
+                                <!-- chart__item-btn--statusActive -->
+                                <div id="chart-5" class="chart__item-btn--status " data-chart="chart-5"></div>
                             </button>
                         </li>
                         <li class="chart__list-item">
@@ -552,10 +554,34 @@
                             <button class="tabs__btn-item" data-button="content-2">аудиокниги</button>
                             <button class="tabs__btn-item" data-button="content-3">подкасты</button>
                             <button class="tabs__btn-item" data-button="content-4">мелодии</button>
+
+                            <div class="tabs__btn-container">
+                                
                             <button class="tabs__btn-filter">
                                 <img src="img/filter.svg" alt="" class="filter__img">
                                 <p class="filter__text">фильтры</p>
+                               
                             </button>
+                            <ul class="filters__container filters__container--visible">
+                                   <li class="filter__item">
+                                    <div id="check-img-1"  class="filter__item-text">Энергичное</div>
+                                    <div  class="check__box"><img data-checkIMG="check-img-1" src="./img/check-line.svg" alt="" class="check__img"></div>
+                                   </li>
+
+                                   <li class="filter__item">
+                                    <div id="check-img-2"  class="filter__item-text filter__item-text--active">Спокойное</div>
+                                    <div  class="check__box">
+                                        <img data-checkIMG="check-img-2" src="./img/check-line.svg" alt="" class="check__img check__img--active">
+                                    </div>
+                                   </li>
+
+                                   <li class="filter__item">
+                                    <div id="check-img-3"  class="filter__item-text">Мелодичное</div>
+                                    <div   class="check__box"><img data-checkIMG="check-img-3" src="./img/check-line.svg" alt="" class="check__img "></div>
+                                   </li>
+                                   <button class="activate__filter">Активировать</button>
+                            </ul>
+                        </div>
                         </div>
 
                         <ul class="tabs__content">
@@ -584,13 +610,6 @@
         <div class="container">
             <div class="footer__inner">
                 <ul class="gone__list">
-                    <li class="gone__list-item">
-                        <div class="burger">
-                            <div class="burger__point"></div>
-                            <div class="burger__point"></div>
-                            <div class="burger__point"></div>
-                        </div>
-                    </li>
                     <li class="gone__list-item">
                         <a href="#pleer" class="gone__list-link">Аудиоплеер</a>
                     </li>

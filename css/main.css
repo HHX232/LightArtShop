@@ -101,11 +101,11 @@ legend {
 }
 
 html {
-  background: linear-gradient(180deg, #0B0F1F 7.35%, #252521 45.35%, #081827 100%) !important;
+  /* background: linear-gradient(180deg, #0B0F1F 7.35%, #252521 45.35%, #081827 100%) !important; */
   z-index: -1;
 }
 
-body {
+.body {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 24px;
@@ -113,8 +113,11 @@ body {
   leading-trim: both;
   text-edge: cap;
   font-variant-numeric: lining-nums proportional-nums;
-  background: linear-gradient(180deg, #0B0F1F 7.35%, #252521 45.35%, #081827 100%) !important;
+  background: linear-gradient(180deg, #0B0F1F 7.35%, #252521 45.35%, #081827 100%) ;
   z-index: -1;
+}
+.body__white{
+  background: linear-gradient(180.00deg, rgb(1, 44, 74),rgb(0, 36, 60) 52.083%,rgb(8, 32, 48) 100%) !important;
 }
 
 .container {
@@ -436,7 +439,7 @@ body {
 .whats__link {
   position: relative;
   padding: 2px 120px;
-  background-color: #161921 !important;
+  background-color: #161921 ;
   text-align: center;
   align-items: center;
   border-radius: 15px;
@@ -446,6 +449,9 @@ body {
   z-index: 2;
   overflow: visible;
   border: 2px solid #DA497A;
+}
+.whats__link-white{
+  background-color: #08293f !important;
 }
 .whats__link:hover {
   background: linear-gradient(91deg, #DA497A -0.88%, #6F66CC 101.54%);
@@ -1035,6 +1041,8 @@ body {
   left: 11%;
   max-width: 460px;
   max-height: 306px;
+  width: 90%;
+  aspect-ratio: 1/1;
   animation-name: image;
   animation-duration: 8s;
   animation-delay: 2s;
@@ -1044,23 +1052,27 @@ body {
 @keyframes image {
   0% {
     left: 11%;
-    content: url('../img/girl-image_11zon.webp');
+    content: url('../img/2020_flag_Belarus_2.jpg');
+    max-width: 460px;
+  max-height: 306px;
+  width: 90%;
+  aspect-ratio: 1/1;
   }
   50% {
-    left: 110%;
+    left: 90%;
   }
   80% {
     left: 7%;
   }
   100% {
     left: 7%;
-    content: url('../img/fish-img.jpg');
+    content: url('../img/Belarus_gerb_2021.jpg');
   }
 }
 @keyframes image2 {
   0% {
     left: 11%;
-    content: url('../img/girl-image_11zon.webp');
+    content: url('../img/2020_flag_Belarus_2.jpg');
   }
   50% {
     left: 60%;
@@ -1070,7 +1082,7 @@ body {
   }
   100% {
     left: 7%;
-    content: url('../img/fish-img.jpg');
+    content: url('../img/Belarus_gerb_2021.jpg');
   }
 }
 @media (max-width: 1400px) {
@@ -1227,6 +1239,7 @@ body {
 }
 .pleer__big-bottom{
   margin-bottom: 100px;
+  padding: 10px;
 }
 .slider{
   max-width:762px;
@@ -1402,23 +1415,84 @@ margin-top: 20px;
   color: #E6306D;
   text-decoration: underline;
 }
+.tabs__btn-container{
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #09314B;
+  border-radius: 10px;
+  padding: 5px;
+}
 .tabs__btn-filter {
   align-items: center;
-  margin-left: auto;
+  /* margin-left: auto; */
   display: flex;
   border-radius: 10px;
   padding: 7px 10px;
-  /* width: fit-content; */
-  /* max-width: 210px;
-  max-height: 42px; */
+
   justify-content: space-around;
-  background-color: #09314B;
+  /* background-color: #09314B; */
   transition: all .3s ease-in-out;
   &:hover{  color: #F8D985;
 
   }
 }
+.filters__container{
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  opacity: 0;
+}
+.filters__container--visible{
+  height: fit-content;
+  opacity: 1;
 
+}
+.filter__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter__item-text {
+  cursor: pointer;
+}
+.filter__item-text--active{
+  text-decoration: underline 2px solid #E6306D;
+  text-underline-offset: 4px;
+}
+.check__box {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #DE376F;
+}
+.check__img {
+  aspect-ratio: 1/1;
+  width: 19px;
+  opacity: 0;
+  transition: all .3s;
+}
+.activate__filter{
+  border: 2px solid #DE376F;
+  border-radius: 10px;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  padding: 5px;
+  transition: all .3s;
+}
+.activate__filter:hover{
+  color: #F8D985;
+  border: 2px solid #F8D985;
+}
+.check__img--active{
+  opacity: 1;
+  transition: all .3s;
+
+}
 .filter__text {
   margin: 0 30px;
 }
@@ -1506,15 +1580,21 @@ padding: 0;
     font-size: 40px;
     text-align: center;
   }
-  /* .tabs__btn-item + .tabs__btn-item{
-    margin: 0;
+  .tabs__btn-item + .tabs__btn-item{
+    margin: 0 auto !important;
+    text-align: center !important;
 
-  } */
+  }
+  .tabs__btn-item{
+
+  }
   .tabs__btn-filter{
     margin-left: 10px;
     /* grid-template-columns: -3/-1; */
     margin-left: 25px;
+ 
   }
+ 
   .tabs__btns{
   margin: 0 auto 40px auto;
   width: fit-content;

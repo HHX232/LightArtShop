@@ -107,3 +107,86 @@ function pause(elt){
   document.querySelector(`#${targetPlayButton}`).classList.toggle("chart__item-btn--statusActive");
 }
 }
+
+const colorBtn = document.querySelector('.commune__item-color')
+const body = document.querySelector('.body')
+const whatsLink = document.querySelector('.whats__link')
+colorBtn.addEventListener("click", () => {
+   body.classList.toggle("body__white")
+   whatsLink.classList.toggle("whats__link-white")
+   if( body.classList.contains("body__white")){
+      colorBtn.innerText = "Темная тема"
+   }else{
+      colorBtn.innerText = "Светлая тема"
+   }
+})
+
+//filters
+
+const filterActivateButton = document.querySelector('.tabs__btn-filter')
+const filterContainer = document.querySelector('.filters__container')
+const filterListText = document.querySelectorAll('.filter__item-text')
+const checksList = document.querySelectorAll('.check__box')
+const imagesList = document.querySelectorAll('.check__img')
+filterActivateButton.addEventListener("click", function(){
+filterContainer.classList.toggle("filters__container--visible")
+})
+
+filterListText.forEach((el) =>{
+   el.addEventListener("click", activateFilter)
+})
+function activateFilter(ev){
+   const targetEl = ev.currentTarget;
+   const targetElID = targetEl.id;
+   const currentCheckMark = document.querySelector(`[data-checkIMG=${targetElID}]`)
+   // console.log(targetEl)
+   if(targetEl.classList.contains("filter__item-text--active")){
+      checksList.forEach((el) =>{
+         el.querySelector(".check__img").classList.remove("check__img--active")
+        })
+        filterListText.forEach((el) =>{
+         el.classList.remove("filter__item-text--active")
+        })
+   }else{
+      checksList.forEach((el) =>{
+   el.querySelector(".check__img").classList.remove("check__img--active")
+  })
+  filterListText.forEach((el) =>{
+   el.classList.remove("filter__item-text--active")
+  })
+  targetEl.classList.add("filter__item-text--active")
+  currentCheckMark.classList.add("check__img--active")
+   }
+}
+checksList.forEach((el) =>{
+   el.addEventListener("click", activateCheck)
+})
+function activateCheck(ev){
+
+   const targetEl = ev.currentTarget;
+   const currentCheckMark = targetEl.querySelector('.check__img')
+      const currentID = currentCheckMark.getAttribute('data-checkIMG');
+      if(currentCheckMark.classList.contains("check__img--active")){
+         imagesList.forEach((img) =>{
+            img.classList.remove("check__img--active")
+         })
+         filterListText.forEach((el) =>{
+         el.classList.remove("filter__item-text--active")
+         
+      })
+      }else{
+         imagesList.forEach((img) =>{
+            img.classList.remove("check__img--active")
+         })
+         filterListText.forEach((el) =>{
+            el.classList.remove("filter__item-text--active")
+            if(el.id == currentID){
+               el.classList.add("filter__item-text--active")
+               currentCheckMark.classList.add("check__img--active")
+            }
+         })
+      }
+     
+
+
+   }
