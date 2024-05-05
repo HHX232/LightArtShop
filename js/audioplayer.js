@@ -19,10 +19,10 @@ class AudioPlayer {
       this._handle_progress()
   
       if (updateAudio) {
-        this.audio.src = this.song.src
+        this.audio.src = !window.location.pathname.includes("index.html") ? `.${this.song.src}` : this.song.src;
       }
   
-      this.image.src = this.song.image
+      this.image.src = !window.location.pathname.includes("index.html") ? `.${this.song.image}` : this.song.image;
       this.name.innerText = this.song.name
       this.author.innerText = this.song.author
       this.category.innerText = this.song.category
@@ -39,18 +39,16 @@ class AudioPlayer {
   
       this.nextSong.name.innerText = nextSong.name
       this.nextSong.author.innerText = nextSong.author
-      this.nextSong.image.src = nextSong.image
+      this.nextSong.image.src = !window.location.pathname.includes("index.html") ? `.${nextSong.image}` : nextSong.image;
   
       const audioNextSong = document.querySelector('audio#next-song')
-      audioNextSong.src = nextSong.src
+      audioNextSong.src = !window.location.pathname.includes("index.html") ? `.${nextSong.src}` : nextSong.src;
   
       audioNextSong.addEventListener('loadeddata', () => {
         const nextSongDurationMinutes = (audioNextSong.duration / 60).toFixed(0)
         const nextSongDurationSeconds = (audioNextSong.duration / 60).toFixed(2).toString().split('.')[1]
         this.nextSong.duration.innerText = `${nextSongDurationMinutes}:${nextSongDurationSeconds} мин`
       })
-  
-      this.nextSong.image.src = nextSong.image
     }
   
     get song () {

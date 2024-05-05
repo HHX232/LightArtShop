@@ -111,7 +111,8 @@ function playSong(event, category) {
   }
   const songIndex = id.split('-')[2]
   const currentSong = SONGS_DATA[category][songIndex]
-  const songListSrc = SONG_LIST.reduce((acc, song) => [...acc, song.src], [])
+  const songListSrc = SONG_LIST.reduce((acc, song) => [...acc, !window.location.pathname.includes("index.html") ? `.${song.src}` : song.src], [])
+
   if (songListSrc.includes(currentSong.src)) {
     audioPlayer.songIndex = songListSrc.indexOf(currentSong.src)
   } else {
@@ -124,14 +125,21 @@ function playSong(event, category) {
 }
 
 function getSongHtml(song, index, category) {
+
+  let listen = "Слушать";
+
+  if (window.location.pathname.includes("en.html")) {
+    listen = "Listen";
+  }
+
   return `
     <div class="tabs__content-card">
-      <img src="${song.image}" alt="" class="tabs__content-img">
+      <img src="${!window.location.pathname.includes("index.html") ? '.' : ''}${song.image}" alt="" class="tabs__content-img">
       <h4 class="tabs__card-title">${song.name}</h4>
       <p class="tabs__card-subtitle">${song.author}</p>
       <button id="${'btn-id-' + index}" onclick="playSong(event, '${category}')" class="tabs__card-play">
         <img src="img/play-white.svg" alt="" class="card__play-img">
-        <p class="tabs__play-text">Слушать</p>
+        <p class="tabs__play-text">${listen}</p>
       </button>
       <div class="tabs__content-time"><span> 0 </span>/1:30</div>
     </div>                                   
