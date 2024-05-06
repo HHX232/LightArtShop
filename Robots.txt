@@ -1,0 +1,4 @@
+
+Sitemap: https://lightartshop.ru/
+User-agent: *
+Allow: ./index.html
