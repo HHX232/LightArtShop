@@ -1,9 +1,10 @@
 class Song {
-  constructor ({ name, author, category, image, src }) {
+  constructor ({ name, author, category, image, src, type }) {
     this.name = name
     this.author = author
     this.category = category
     this.image = image
     this.src = src
+    this.type = type
   }
 }
