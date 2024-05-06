@@ -564,19 +564,21 @@
                             </button>
                             <ul class="filters__container filters__container--visible">
                                    <li class="filter__item">
-                                    <div id="check-img-1"  class="filter__item-text">Энергичное</div>
+                                    <div id="check-img-1" data-filter = "energy"  class="filter__item-text">Энергичное</div>
                                     <div  class="check__box"><img data-checkIMG="check-img-1" src="./img/check-line.svg" alt="" class="check__img"></div>
                                    </li>
 
                                    <li class="filter__item">
-                                    <div id="check-img-2"  class="filter__item-text filter__item-text--active">Спокойное</div>
+                                    <!-- filter__item-text--active -->
+                                    <div id="check-img-2" data-filter = "calm"  class="filter__item-text ">Спокойное</div>
                                     <div  class="check__box">
-                                        <img data-checkIMG="check-img-2" src="./img/check-line.svg" alt="" class="check__img check__img--active">
+                                        <!-- check__img--active -->
+                                        <img data-checkIMG="check-img-2" src="./img/check-line.svg" alt="" class="check__img ">
                                     </div>
                                    </li>
 
                                    <li class="filter__item">
-                                    <div id="check-img-3"  class="filter__item-text">Мелодичное</div>
+                                    <div id="check-img-3" data-filter = "melody"  class="filter__item-text">Мелодичное</div>
                                     <div   class="check__box"><img data-checkIMG="check-img-3" src="./img/check-line.svg" alt="" class="check__img "></div>
                                    </li>
                                    <button class="activate__filter">Активировать</button>
@@ -600,7 +602,7 @@
                         </ul>
                     </div>
 
-
+<!--  -->
                 </div>
             </div>
         </div>
@@ -640,12 +642,13 @@
 
 
 
+   
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/song.js" defer></script>
-    <script src="js/data.js" defer></script>
-    <script src="js/audioplayer.js" defer></script>
-    <script src="js/progressbar.js" defer></script>
-    <script src="js/main_audioplayer.js" defer></script>
+    <script src="js/song.js" ></script>
+    <script src="js/data.js" ></script>
+    <script src="js/audioplayer.js" ></script>
+    <script src="js/progressbar.js" ></script>
+    <script src="js/main_audioplayer.js" ></script>
     <script src="js/main.js"></script>
 </body>
 

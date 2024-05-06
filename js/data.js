@@ -5,84 +5,96 @@ const SONGS_DATA = {
       author: 'Alec benjamin',
       category: 'Песни',
       image: './img/songs/music/water fountain.jpeg',
-      src: './img/songs/music/freecompress-Alec Benjamin - Water Fountain.mp3'
+      src: './img/songs/music/freecompress-Alec Benjamin - Water Fountain.mp3',
+      type: 'melody'
     }),
     new Song({
       name: 'Close To You',
       author: 'Aurosonic',
       category: 'Песни',
       image: './img/songs/music/close to you.jpeg',
-      src: './img/songs/music/freecompress-Aurosonic – Close To You .mp3'
+      src: './img/songs/music/freecompress-Aurosonic – Close To You .mp3',
+      type: 'melody'
     }),
     new Song({
       name: 'Kicks',
       author: 'Barns Courtney',
       category: 'Песни',
       image: './img/songs/music/kicks.jpeg',
-      src: './img/songs/music/freecompress-Barns Courtney - Kicks.mp3'
+      src: './img/songs/music/freecompress-Barns Courtney - Kicks.mp3',
+      type:'energy'
     }),
     new Song({
       name: 'We Don\'t Talk Anymore',
       author: 'Charlie Puth feat Selena Gomez',
       category: 'Песни',
       image: './img/songs/music/we dont talk any more.jpeg',
-      src: './img/songs/music/freecompress-Charlie Puth feat Selena Gomez - We Don\'t Talk Anymore.mp3'
+      src: './img/songs/music/freecompress-Charlie Puth feat Selena Gomez - We Don\'t Talk Anymore.mp3',
+      type:'calm'
     }),
     new Song({
       name: 'Stereo Hearts',
       author: 'Gym Class Heroes & Adam Levine',
       category: 'Песни',
       image: './img/songs/music/stereo hearts.jpeg',
-      src: './img/songs/music/freecompress-Gym Class Heroes & Adam Levine - Stereo Hearts.mp3'
+      src: './img/songs/music/freecompress-Gym Class Heroes & Adam Levine - Stereo Hearts.mp3',
+      type:'energy'
     }),
     new Song({
       name: 'Bad Liar',
       author: 'Imagine Dragons',
       category: 'Песни',
       image: './img/songs/music/bad liar.jpeg',
-      src: './img/songs/music/freecompress-Imagine Dragons - Bad Liar.mp3'
+      src: './img/songs/music/freecompress-Imagine Dragons - Bad Liar.mp3',
+      type:'calm'
     }),
     new Song({
       name: 'Demons',
       author: 'Jada Facer',
       category: 'Песни',
       image: './img/songs/music/demons.jpeg',
-      src: './img/songs/music/freecompress-Jada Facer - Demons.mp3'
+      src: './img/songs/music/freecompress-Jada Facer - Demons.mp3',
+      type:'energy'
     }),
     new Song({
       name: 'N&N',
       author: 'Mani Beats',
       category: 'Песни',
       image: './img/songs/music/N&N.jpeg',
-      src: './img/songs/music/freecompress-Mani Beats - N&N.mp3'
+      src: './img/songs/music/freecompress-Mani Beats - N&N.mp3',
+      type: 'melody'
     }),
     new Song({
       name: 'Animals',
       author: 'Maroon5',
       category: 'Песни',
       image: './img/songs/music/animals.jpeg',
-      src: './img/songs/music/freecompress-Maroon5 - Animals.mp3'
+      src: './img/songs/music/freecompress-Maroon5 - Animals.mp3',
+      type:'energy'
     }),
     new Song({
       name: 'Hawse',
       author: 'Osman',
       category: 'Песни',
       image: './img/songs/music/house.jpg',
-      src: './img/songs/music/freecompress-Osman Hawse.mp3'
+      src: './img/songs/music/freecompress-Osman Hawse.mp3',
+      type: 'melody'
     }),
     new Song({
       name: 'Freaks',
       author: 'Surf Curse',
       category: 'Песни',
       image: './img/songs/music/freaks.jpeg',
-      src: './img/songs/music/freecompress-Surf Curse - Freaks.mp3'
+      src: './img/songs/music/freecompress-Surf Curse - Freaks.mp3',
+      type:'energy'
     }),
     new Song({
       name: 'Freaks',
       author: 'T3nzu ',
       category: 'Песни',
       image: './img/songs/music/Give it to me.jpeg',
-      src: './img/songs/music/freecompress-t3nzu-give-it-to-me_(muztub.com).mp3'
+      src: './img/songs/music/freecompress-t3nzu-give-it-to-me_(muztub.com).mp3',
+      type:'energy'
     }),
   ],
   audioBooks: [
