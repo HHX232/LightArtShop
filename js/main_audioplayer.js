@@ -132,6 +132,12 @@ function getSongHtml(song, index, category) {
     listen = "Listen";
   }
 
+  const songTimeMinutes = Math.floor(song.time / 60);
+  const songTimeSecconds = song.time - songTimeMinutes * 60;
+  const time = songTimeSecconds < 10
+  ? `${songTimeMinutes}:0${songTimeSecconds}`
+  : `${songTimeMinutes}:${songTimeSecconds}`;
+
   return `
     <div class="tabs__content-card">
       <img src="${!window.location.pathname.includes("index.html") ? '.' : ''}${song.image}" alt="" class="tabs__content-img">
@@ -141,7 +147,7 @@ function getSongHtml(song, index, category) {
         <img src="img/play-white.svg" alt="" class="card__play-img">
         <p class="tabs__play-text">${listen}</p>
       </button>
-      <div class="tabs__content-time"><span> 0 </span>/1:30</div>
+      <div class="tabs__content-time"><span> 0 </span>/${time}</div>
     </div>                                   
   `
 }

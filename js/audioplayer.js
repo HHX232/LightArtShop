@@ -41,14 +41,13 @@ class AudioPlayer {
       this.nextSong.author.innerText = nextSong.author
       this.nextSong.image.src = !window.location.pathname.includes("index.html") ? `.${nextSong.image}` : nextSong.image;
   
-      const audioNextSong = document.querySelector('audio#next-song')
-      audioNextSong.src = !window.location.pathname.includes("index.html") ? `.${nextSong.src}` : nextSong.src;
+      const songTimeMinutes = Math.floor(nextSong.time / 60);
+      const songTimeSecconds = nextSong.time - songTimeMinutes * 60;
+      const time = songTimeSecconds < 10
+      ? `${songTimeMinutes}:0${songTimeSecconds}`
+      : `${songTimeMinutes}:${songTimeSecconds}`;
   
-      audioNextSong.addEventListener('loadeddata', () => {
-        const nextSongDurationMinutes = (audioNextSong.duration / 60).toFixed(0)
-        const nextSongDurationSeconds = (audioNextSong.duration / 60).toFixed(2).toString().split('.')[1]
-        this.nextSong.duration.innerText = `${nextSongDurationMinutes}:${nextSongDurationSeconds} мин`
-      })
+      this.nextSong.duration.innerText = `${time} мин`
     }
   
     get song () {
