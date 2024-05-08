@@ -127,7 +127,7 @@ html {
 
 .nav__inner {
   display: flex;
-  width: auto;
+  width: 100%;
   padding: 17px 35px;
   align-items: center;
   justify-content: space-between;

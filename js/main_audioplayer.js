@@ -132,6 +132,10 @@ function getSongHtml(song, index, category) {
     listen = "Listen";
   }
 
+  if (window.location.pathname.includes("by.html")) {
+    listen = "Слухаць";
+  }
+
   const songTimeMinutes = Math.floor(song.time / 60);
   const songTimeSecconds = song.time - songTimeMinutes * 60;
   const time = songTimeSecconds < 10
@@ -144,7 +148,7 @@ function getSongHtml(song, index, category) {
       <h4 class="tabs__card-title">${song.name}</h4>
       <p class="tabs__card-subtitle">${song.author}</p>
       <button id="${'btn-id-' + index}" onclick="playSong(event, '${category}')" class="tabs__card-play">
-        <img src="img/play-white.svg" alt="" class="card__play-img">
+        <img src="${!window.location.pathname.includes("index.html") ? '.' : ''}./img/play-white.svg" alt="" class="card__play-img">
         <p class="tabs__play-text">${listen}</p>
       </button>
       <div class="tabs__content-time"><span> 0 </span>/${time}</div>
