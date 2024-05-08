@@ -136,6 +136,10 @@ function getSongHtml(song, index, category) {
     listen = "Слухаць";
   }
 
+  if (window.location.pathname.includes("de.html")) {
+    listen = "Hören";
+  }
+
   const songTimeMinutes = Math.floor(song.time / 60);
   const songTimeSecconds = song.time - songTimeMinutes * 60;
   const time = songTimeSecconds < 10
